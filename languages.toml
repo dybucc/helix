@@ -1,0 +1,98 @@
+[[language]]
+name = "markdown"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "cpp"
+auto-format = true
+
+[[language]]
+name = "c"
+auto-format = true
+
+[[language]]
+name = "rust"
+
+[[language]]
+name = "typst"
+auto-format = true
+
+
+[language-server.clangd.config]
+args = [
+  "--background-index-priority=normal",
+  "--clang-tidy",
+  "--completion-style=detailed",
+  "--header-insertion-decorators",
+  "--import-insertions",
+  "--limit-references=0",
+  "--limit-results=0",
+  "--rename-file-limit=0",
+  "--enable-config",
+  "-j 4",
+  "--malloc-trim",
+  "--pch-storage=memory"
+]
+
+[language-server.rust-analyzer.config]
+restartServerOnConfigChange = true
+files.watcher = "server"
+
+[language-server.rust-analyzer.config.diagnostics]
+# previewRustcOutput = true
+useRustcErrorCode = true
+styleLints.enable = true
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+[language-server.rust-analyzer.config.completion]
+fullFunctionSignatures.enable = true
+hideDeprecated = true
+limit = "null"
+termSearch.enable = true
+
+[language-server.rust-analyzer.config.hover]
+actions.references.enable = true
+maxSubstitutionLength = "null"
+memoryLayout = { niches = true, offset = "both" }
+
+[language-server.rust-analyzer.config.imports]
+granularity.enforce = true
+preferPrelude = true
+prefix = "crate"
+
+[language-server.rust-analyzer.config.inlayHints]
+bindingModeHints.enable = true
+closingBraceHints.minLines = 1
+closureCaptureHints.enable = true
+closureReturnTypeHints.enable = "always"
+discriminantHints.enable = "always"
+expressionAdjustmentHints = { enable = "always", mode = "prefer_prefix" }
+genericParameterHints = { lifetime.enable = true, type.enable = true }
+implicitDrops.enable = true
+implicitSizedBoundHints.enable = true
+lifetimeElisionHints = { enable = "always", useParameterNames = true }
+maxLength = "null"
+rangeExclusiveHints.enable = true
+
+[language-server.rust-analyzer.config.lens.references]
+adt.enable = true
+enumVariant.enable = true
+method.enable = true
+trait.enable = true
+
+[language-server.rust-analyzer.config.semanticHighlighting]
+operator.specialization.enable = true
+punctuation = { enable = true, separate.macro.bang = true }
+
+
+[language-server.tinymist.config]
+# projectResolution = "lockDatabase"
+outputPath = "$root/target/$dir/$name"
+# exportPdf = "onSave"
+typstExtraArgs = [ "main.typ" ]
+formatterMode = "typstyle"
+formatterPrintWidth = 100
+formatterIndentSize = 2
+completion.triggerOnSnippetPlaceholders = true
