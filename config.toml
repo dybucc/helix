@@ -1,3 +1,5 @@
+theme = "onedark"
+
 [editor]
 scrolloff = 100
 mouse = false
