@@ -14,7 +14,7 @@ popup-border = "all"
 clipboard-provider = "wayland"
 
 [editor.lsp]
-display-progress-messages = true
+# display-progress-messages = true
 display-inlay-hints = true
 
 [editor.file-picker]
