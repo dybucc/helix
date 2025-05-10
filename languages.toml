@@ -4,6 +4,7 @@ indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "cpp"
+rulers = [ 80 ]
 auto-format = true
 
 [[language]]
