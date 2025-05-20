@@ -1,7 +1,7 @@
 theme = "tokyonight"
 
 [editor]
-scrolloff = 100
+# scrolloff = 100
 mouse = false
 shell = [ "fish", "-c" ]
 line-number = "relative"
