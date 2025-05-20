@@ -14,6 +14,7 @@ undercurl = true
 rulers = [ 100 ]
 popup-border = "all"
 clipboard-provider = "wayland"
+end-of-line-diagnostics = "hint"
 
 [editor.lsp]
 # display-progress-messages = true
@@ -40,8 +41,7 @@ render = true
 min-width = 1
 
 [editor.inline-diagnostics]
-cursor-line = "hint"
-other-lines = "hint"
+cursor-line = "warning"
 
 [keys.insert]
 up = "no_op"
