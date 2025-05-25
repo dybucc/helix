@@ -71,7 +71,7 @@ closureReturnTypeHints.enable = "always"
 discriminantHints.enable = "always"
 expressionAdjustmentHints = { enable = "always", mode = "prefer_prefix" }
 genericParameterHints = { lifetime.enable = true, type.enable = true }
-implicitDrops.enable = true
+# implicitDrops.enable = true
 implicitSizedBoundHints.enable = true
 lifetimeElisionHints = { enable = "always", useParameterNames = true }
 maxLength = "null"
