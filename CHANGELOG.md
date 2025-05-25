@@ -1,3 +1,13 @@
+## 0.1.1 (2025-05-25)
+
+### Fix
+
+- change drop inlay hints in rust-analyzer
+
+### Refactor
+
+- disable tinymist output
+
 ## 0.1.0 (2025-05-20)
 
 ### Feat
