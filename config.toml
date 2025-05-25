@@ -28,7 +28,7 @@ focus-lost = true
 after-delay.enable = true
 
 [editor.whitespace.render]
-space = "all"
+# space = "all"
 tab = "all"
 nbsp = "none"
 nnbsp = "none"
@@ -41,7 +41,7 @@ render = true
 min-width = 1
 
 [editor.inline-diagnostics]
-cursor-line = "warning"
+cursor-line = "hint"
 
 [keys.insert]
 up = "no_op"
