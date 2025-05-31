@@ -1,23 +1,26 @@
-theme = "boo_berry"
+theme = "gruvbox_dark_hard"
 
 [editor]
-# scrolloff = 100
 mouse = false
+middle-click-paste = false
 shell = [ "fish", "-c" ]
 line-number = "relative"
 cursorline = true
 completion-timeout = 5
 completion-trigger-len = 1
-# completion-replace = true
 true-color = true
 undercurl = true
 rulers = [ 100 ]
+bufferline = "always"
+color-modes = true
+text-width = 100
+trim-final-newlines = true
+trim-trailing-whitespace = true
 popup-border = "all"
 clipboard-provider = "wayland"
 end-of-line-diagnostics = "hint"
 
 [editor.lsp]
-# display-progress-messages = true
 display-inlay-hints = true
 
 [editor.file-picker]
@@ -40,6 +43,9 @@ render = true
 [editor.gutters.line-numbers]
 min-width = 1
 
+[editor.smart-tab]
+supersede-menu = true
+
 [editor.inline-diagnostics]
 cursor-line = "hint"
 
@@ -52,6 +58,7 @@ pageup = "no_op"
 pagedown = "no_op"
 home = "no_op"
 end = "no_op"
+S-tab = "move_parent_node_start"
 
 [keys.normal]
 up = "no_op"
@@ -62,6 +69,8 @@ pageup = "no_op"
 pagedown = "no_op"
 home = "no_op"
 end = "no_op"
+tab = "move_parent_node_end"
+S-tab = "move_parent_node_start"
 
 [keys.select]
 up = "no_op"
@@ -72,3 +81,5 @@ pageup = "no_op"
 pagedown = "no_op"
 home = "no_op"
 end = "no_op"
+tab = "extend_parent_node_end"
+S-tab = "extend_parent_node_start"
