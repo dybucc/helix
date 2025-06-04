@@ -60,7 +60,7 @@ memoryLayout = { niches = true, offset = "both" }
 
 [language-server.rust-analyzer.config.imports]
 granularity.enforce = true
-preferPrelude = true
+# preferPrelude = true
 prefix = "crate"
 
 [language-server.rust-analyzer.config.inlayHints]
