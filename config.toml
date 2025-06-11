@@ -26,9 +26,9 @@ display-inlay-hints = true
 [editor.file-picker]
 hidden = false
 
-[editor.auto-save]
-focus-lost = true
-after-delay.enable = true
+# [editor.auto-save]
+# focus-lost = true
+# after-delay.enable = true
 
 [editor.whitespace.render]
 # space = "all"
