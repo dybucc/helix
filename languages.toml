@@ -37,10 +37,11 @@ args = [
 
 [language-server.rust-analyzer.config]
 restartServerOnConfigChange = true
-files.watcher = "server"
+showSyntaxTree = true
+testExplorer = true
 
 [language-server.rust-analyzer.config.diagnostics]
-# previewRustcOutput = true
+previewRustcOutput = true
 useRustcErrorCode = true
 styleLints.enable = true
 
@@ -51,16 +52,16 @@ command = "clippy"
 fullFunctionSignatures.enable = true
 hideDeprecated = true
 limit = "null"
+postfix.enable = false
 termSearch.enable = true
 
 [language-server.rust-analyzer.config.hover]
 actions.references.enable = true
 maxSubstitutionLength = "null"
-memoryLayout = { niches = true, offset = "both" }
+show.traitAssocItems = 5
 
 [language-server.rust-analyzer.config.imports]
 granularity.enforce = true
-# preferPrelude = true
 prefix = "crate"
 
 [language-server.rust-analyzer.config.inlayHints]
@@ -69,9 +70,8 @@ closingBraceHints.minLines = 1
 closureCaptureHints.enable = true
 closureReturnTypeHints.enable = "always"
 discriminantHints.enable = "always"
-expressionAdjustmentHints = { enable = "always", mode = "prefer_prefix" }
+expressionAdjustmentHints = { enable = "always", mode = "prefix" }
 genericParameterHints = { lifetime.enable = true, type.enable = true }
-# implicitDrops.enable = true
 implicitSizedBoundHints.enable = true
 lifetimeElisionHints = { enable = "always", useParameterNames = true }
 maxLength = "null"
@@ -83,10 +83,17 @@ enumVariant.enable = true
 method.enable = true
 trait.enable = true
 
+[language-server.rust-analyzer.config.references]
+excludeImports = true
+excludeTests = true
+
 [language-server.rust-analyzer.config.semanticHighlighting]
 operator.specialization.enable = true
-punctuation = { enable = true, separate.macro.bang = true }
 
+[language-server.rust-analyzer.config.semanticHighlighting.punctuation]
+enable = true
+separate.macro.bang = true
+specialization.enable = true
 
 [language-server.tinymist.config]
 # projectResolution = "lockDatabase"
