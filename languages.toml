@@ -104,3 +104,9 @@ formatterMode = "typstyle"
 formatterPrintWidth = 100
 formatterIndentSize = 2
 completion.triggerOnSnippetPlaceholders = true
+
+[language-server.elm-language-server.config.elmLS]
+elmReviewDiagnostics = "error"
+disableElmLSDiagnostics = false
+skipInstallPackageConfirmation = false
+onlyUpdateDiagnosticsOnSave = false
