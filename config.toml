@@ -19,6 +19,16 @@ popup-border = "all"
 clipboard-provider = "wayland"
 end-of-line-diagnostics = "hint"
 
+[editor.statusline]
+left = [
+  "mode",
+  "spacer",
+  "spinner",
+  "file-name",
+  "read-only-indicator",
+  "file-modification-indicator"
+]
+
 [editor.lsp]
 display-inlay-hints = true
 
