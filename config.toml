@@ -11,7 +11,6 @@ completion-trigger-len = 1
 true-color = true
 undercurl = true
 rulers = [ 100 ]
-bufferline = "always"
 color-modes = true
 text-width = 100
 trim-final-newlines = true
