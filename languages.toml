@@ -68,19 +68,6 @@ show.traitAssocItems = 5
 granularity.enforce = true
 prefix = "crate"
 
-[language-server.rust-analyzer.config.inlayHints]
-bindingModeHints.enable = true
-closingBraceHints.minLines = 1
-closureCaptureHints.enable = true
-closureReturnTypeHints.enable = "always"
-discriminantHints.enable = "always"
-expressionAdjustmentHints = { enable = "always", mode = "prefix" }
-genericParameterHints = { lifetime.enable = true, type.enable = true }
-implicitSizedBoundHints.enable = true
-lifetimeElisionHints = { enable = "always", useParameterNames = true }
-maxLength = "null"
-rangeExclusiveHints.enable = true
-
 [language-server.rust-analyzer.config.lens.references]
 adt.enable = true
 enumVariant.enable = true
