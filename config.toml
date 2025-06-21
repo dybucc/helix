@@ -3,7 +3,7 @@ theme = "catppuccin_mocha"
 [editor]
 mouse = false
 middle-click-paste = false
-# shell = [ "fish", "-c" ]
+shell = [ "fish", "-c" ]
 line-number = "relative"
 cursorline = true
 completion-timeout = 5
