@@ -18,6 +18,10 @@ name = "rust"
 name = "typst"
 auto-format = true
 
+[[language]]
+name = "python"
+auto-format = true
+
 
 [language-server.clangd.config]
 args = [
@@ -110,3 +114,27 @@ elmReviewDiagnostics = "error"
 disableElmLSDiagnostics = false
 skipInstallPackageConfirmation = false
 onlyUpdateDiagnosticsOnSave = false
+
+[language-server.pylsp.config.pylsp.plugins.jedi_completion]
+include_class_objects = true
+include_function_objects = true
+fuzzy = true
+resolve_at_most = "null"
+
+[language-server.pylsp.config.pylsp.plugins.pycodestyle]
+maxLineLength = 100
+indentSize = 4
+
+[language-server.pylsp.config.pylsp.plugins.pydocstyle]
+enabled = true
+convention = "pep257"
+
+[language-server.pylsp.config.pylsp.plugins.pylint]
+enabled = true
+
+[language-server.pylsp.config.pylsp.plugins.rope_autoimport]
+enabled = true
+memory = true
+
+[language-server.pylsp.config.pylsp.signature]
+formatter = "ruff"
