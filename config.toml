@@ -75,6 +75,7 @@ home = "no_op"
 end = "no_op"
 tab = "move_parent_node_end"
 S-tab = "move_parent_node_start"
+ret = "wa"
 
 [keys.select]
 up = "no_op"
