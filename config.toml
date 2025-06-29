@@ -1,11 +1,11 @@
-theme = "catppuccin_mocha"
+theme = "base16_transparent"
 
 [editor]
 mouse = false
 middle-click-paste = false
 shell = [ "fish", "-c" ]
 line-number = "relative"
-# cursorline = true
+cursorline = true
 completion-timeout = 5
 completion-trigger-len = 1
 true-color = true
@@ -41,9 +41,6 @@ nbsp = "none"
 nnbsp = "none"
 newline = "none"
 
-[editor.indent-guides]
-render = true
-
 [editor.gutters.line-numbers]
 min-width = 1
 
@@ -75,7 +72,8 @@ home = "no_op"
 end = "no_op"
 tab = "move_parent_node_end"
 S-tab = "move_parent_node_start"
-ret = "wa"
+ret = ":w"
+S-ret = ":wa"
 
 [keys.select]
 up = "no_op"
