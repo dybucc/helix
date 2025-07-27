@@ -37,6 +37,12 @@ name = "tsx"
 formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
 auto-format = true
 
+[[language]]
+name = "go"
+auto-format = true
+rulers = [ 80 ]
+formatter = { command = "goimports" }
+
 
 [language-server.clangd.config]
 args = [
