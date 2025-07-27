@@ -22,6 +22,21 @@ auto-format = true
 name = "python"
 auto-format = true
 
+[[language]]
+name = "typescript"
+formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
+auto-format = true
+
+[[language]]
+name = "javascript"
+formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
+auto-format = true
+
 
 [language-server.clangd.config]
 args = [
